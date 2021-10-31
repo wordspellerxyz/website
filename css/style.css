@@ -113,7 +113,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   font-size: 0.95rem;
   font-weight: 500;
 }
@@ -188,7 +188,10 @@ main h2 {
 
 footer {
   border-top: 1px solid var(--grey-color);
-  text-align: center;
+}
+
+footer p {
+  font-size: 0.95rem;
 }
 
 .container {
