@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Wordspeller - Improve Your Spelling Skills" />
+    <meta
+      name="description"
+      content="A web app that helps to improve spelling skills, especially for children."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.wordspeller.xyz/" />
+    <meta
+      property="og:title"
+      content="Wordspeller - Improve Your Spelling Skills"
+    />
+    <meta
+      property="og:description"
+      content="A web app that helps to improve spelling skills, especially for children."
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/0FFK6X5/wordspeller-banner.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.wordspeller.xyz/" />
+    <meta
+      property="twitter:title"
+      content="Wordspeller - Improve Your Spelling Skills"
+    />
+    <meta
+      property="twitter:description"
+      content="A web app that helps to improve spelling skills, especially for children."
+    />
+    <meta
+      property="twitter:image"
+      content="https://i.ibb.co/0FFK6X5/wordspeller-banner.png"
+    />
+
+    <title>Wordspeller - Improve Your Spelling Skills</title>
+
+    <link rel="stylesheet" href="/css/normalise.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <script src="/js/app.js" defer></script>
+    <script src="/js/wordspeller.js" defer></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KKC99KSTR0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-KKC99KSTR0');
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container space-between">
+        <a id="website-logo"><h1>Wordspeller</h1></a>
+
+        <nav id="desktop-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="mailto:contact@malikolabiyi.com">Contact</a></li>
+            <li><a href="/pages/join-launch-list.html">More Features</a></li>
+            <li><a href="/pages/join-launch-list.html">Get Mobile App</a></li>
+          </ul>
+        </nav>
+
+        <nav id="mobile-nav">
+          <ul>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="var(--black)"
+              id="show-mobile-nav"
+              style="cursor: pointer"
+            >
+              <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="var(--black)"
+              id="hide-mobile-nav"
+              style="cursor: pointer; display: none"
+            >
+              <path
+                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
+              />
+            </svg>
+          </ul>
+
+          <div id="mobile-nav-content">
+            <div class="container">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="mailto:contact@malikolabiyi.com">Contact</a></li>
+                <li>
+                  <a href="/pages/join-launch-list.html">More Features</a>
+                </li>
+                <li>
+                  <a href="/pages/join-launch-list.html">Get Mobile App</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Improve Your Spelling Skills</h2>
+        <p>
+          Let us select word randomly inline with your settings, or type a word
+          to spell.
+        </p>
+
+        <div id="form-container">
+          <form id="wordspeller-form">
+            <div>
+              <label for="word-to-spell"></label>
+              <input
+                type="text"
+                placeholder="Type the word to spell"
+                id="word-to-spell-input"
+                name="wordToSpell"
+                required
+              />
+            </div>
+
+            <button type="button" class="btn--black-bg" id="generate-word-btn">
+              Generate Word
+            </button>
+            <button type="submit" id="spell-btn">Spell</button>
+          </form>
+        </div>
+
+        <p id="form-error-paragraph" class="error-message"></p>
+
+        <small>
+          Voice Settings, Speed Settings, Number-letter Words Lists coming soon:
+          <a href="/pages/join-launch-list.html">Join Launch List</a>
+        </small>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container space-between">
+        <p>
+          &copy; 2021, by
+          <a href="https://www.malikolabiyi.com">Malik Olabiyi</a>.
+        </p>
+
+        <nav>
+          <ul>
+            <li><a href="mailto:contact@malikolabiyi.com">Contact</a></li>
+            <li>
+              <a href="/pages/privacy.html">Privacy</a>
+            </li>
+            <li>
+              <a href="/pages/terms.html">Terms</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
