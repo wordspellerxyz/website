@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poiret+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,23 +7,28 @@
 html {
   font-size: 15px;
 
-  --black-color: #0d0b0b;
-  --blue-color: #111ae7;
-  --white-color: #ffffff;
-  --grey-color: #efefef;
-  --green-color: #00ce6e;
-  --red-color: #ff0000;
+  --black-colour: #1a1a1a;
+  --brown-colour: #4b4b4b;
+  --blue-colour: #0047ab;
+  --white-colour: #ffffff;
+  --grey-colour: #efefef;
+  --green-colour: #00ce6e;
+  --red-colour: #ff0000;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: var(--black-color);
-  background-color: var(--white-color);
-  margin: 0;
-  padding: 0;
+  font-family: "Lexend", sans-serif;
+  background: var(--white-colour);
+  color: var(--black-colour);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
 }
 
 p {
+  color: var(--brown-colour);
   line-height: 1.8rem;
 }
 
@@ -33,7 +38,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poiret One', cursive;
   margin: 0.5rem 0;
 }
 
@@ -62,7 +66,7 @@ h6 {
 }
 
 a {
-  color: var(--blue-color);
+  color: var(--blue-colour);
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
@@ -86,8 +90,8 @@ button,
   font-size: 0.95rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--blue-color);
-  color: var(--white-color);
+  background-color: var(--blue-colour);
+  color: var(--white-colour);
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -102,24 +106,7 @@ button:disabled {
 }
 
 .btn--black-bg {
-  background-color: var(--black-color);
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  margin-right: 1.5rem;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
+  background-color: var(--black-colour);
 }
 
 article ul {
@@ -127,67 +114,48 @@ article ul {
   list-style-type: square;
 }
 
-input {
+input,
+.input-div {
   display: block;
   width: 100%;
   font-size: 0.95rem;
-  background-color: var(--grey-color);
-  color: var(--black-color);
+  background-color: var(--grey-colour);
+  color: var(--black-colour);
   padding: 1rem 1.2rem;
   border: none;
   margin: 0.2rem 0;
   border-radius: 10px;
 }
 
-header {
-  border-bottom: 1px solid var(--grey-color);
+.magic-word {
+  background-color: var(--grey-colour);
+  padding: 0 1rem 0;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.magic-word div {
+  width: 70%;
 }
 
 header h1 {
-  color: var(--blue-color);
-  font-size: 1.5rem;
+  color: var(--blue-colour);
+  font-size: 1.2rem;
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 header a#website-logo:hover {
   text-decoration: none;
 }
 
-nav#desktop-nav {
-  display: none;
-}
-
-div#mobile-nav-content {
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: 4rem;
-  right: 0;
-  border-bottom: 1px solid var(--blue-color);
-  background-color: var(--white-color);
-  z-index: 2;
-}
-
-div#mobile-nav-content ul {
-  flex-direction: column;
-  padding: 0 !important;
-}
-
-nav div#mobile-nav-content ul li {
-  list-style-type: none;
-  margin: 1.2rem 0rem;
-}
-
 main {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 main h2 {
   font-size: 2.5rem;
-}
-
-footer {
-  border-top: 1px solid var(--grey-color);
 }
 
 footer p {
@@ -227,6 +195,10 @@ footer p {
   html {
     font-size: 16px;
   }
+
+  main {
+    width: 70%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -236,7 +208,6 @@ footer p {
 
   main {
     width: 60%;
-    margin: 3rem auto;
   }
 
   nav#mobile-nav {
