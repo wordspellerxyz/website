@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,8 +8,6 @@ html {
   font-size: 15px;
 
   --black-colour: #1a1a1a;
-  --brown-colour: #4b4b4b;
-  --blue-colour: #0047ab;
   --white-colour: #ffffff;
   --grey-colour: #efefef;
   --green-colour: #00ce6e;
@@ -17,7 +15,7 @@ html {
 }
 
 body {
-  font-family: "Lexend", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: var(--white-colour);
   color: var(--black-colour);
   height: 100vh;
@@ -28,7 +26,6 @@ body {
 }
 
 p {
-  color: var(--brown-colour);
   line-height: 1.8rem;
 }
 
@@ -43,10 +40,13 @@ h6 {
 
 h1 {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 1.875rem;
+  color: var(--black-colour);
+  font-weight: 300;
 }
 
 h3 {
@@ -63,6 +63,10 @@ h5 {
 
 h6 {
   font-size: 1.375rem;
+}
+
+strong {
+  font-weight: 500;
 }
 
 a {
@@ -87,17 +91,16 @@ small {
 button,
 .btn {
   padding: 1rem 2rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--blue-colour);
+  background-color: var(--black-colour);
   color: var(--white-colour);
   border: none;
   border-radius: 10px;
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  margin: 0.2rem 0;
 }
 
 button:disabled {
@@ -123,7 +126,6 @@ input,
   color: var(--black-colour);
   padding: 1rem 1.2rem;
   border: none;
-  margin: 0.2rem 0;
   border-radius: 10px;
 }
 
@@ -140,10 +142,10 @@ input,
 
 header h1 {
   color: var(--blue-colour);
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  text-transform: uppercase;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 header a#website-logo:hover {
@@ -171,14 +173,14 @@ footer p {
  */
 
 .error-message {
-  color: var(--red-color);
+  color: var(--red-colour);
   font-size: 0.9rem;
   font-weight: 500;
   text-align: left;
 }
 
 #mc-status-success {
-  color: var(--green-color);
+  color: var(--green-colour);
   font-size: 0.9rem;
   font-weight: 500;
   text-align: left;
@@ -202,6 +204,10 @@ footer p {
 }
 
 @media (min-width: 1024px) {
+  html {
+    font-size: 17px;
+  }
+
   .desktop {
     display: none;
   }
