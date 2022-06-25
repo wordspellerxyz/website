@@ -12,6 +12,7 @@ html {
   --grey-colour: #efefef;
   --green-colour: #00ce6e;
   --red-colour: #ff0000;
+  --blue-colour: #0047ab;
 }
 
 body {
@@ -94,7 +95,7 @@ button,
   font-size: 0.9rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--black-colour);
+  background-color: var(--blue-colour);
   color: var(--white-colour);
   border: none;
   border-radius: 10px;
